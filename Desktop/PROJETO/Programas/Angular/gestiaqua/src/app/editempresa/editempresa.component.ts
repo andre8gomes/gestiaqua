@@ -66,20 +66,22 @@ export class EditempresaComponent implements OnInit {
           .subscribe(resp => {
             this.resp = resp;
             //console.log("Edit empresa ----->", this.resp);
-            if(this.resp[0].resposta == 'true'){
-              alert('Com sucesso');
-              this.router.navigate(['/empresas']);
-            }
-            else if(this.resp[0].resposta == 'false_e'){
-              alert('Empresa já removida');
-              this.router.navigate(['/empresas']);
-            }
-            else if(this.resp[0].resposta == 'false_i'){
-              alert('Utilizador já existente');
-              this.router.navigate(['/empresas']);
-            }
-            else{
-              alert('Erro ao editar empresa');
+            if(this.resp != null){
+              if(this.resp[0].resposta == 'true'){
+                alert('Com sucesso');
+                this.router.navigate(['/empresas']);
+              }
+              else if(this.resp[0].resposta == 'false_e'){
+                alert('Empresa já removida');
+                this.router.navigate(['/empresas']);
+              }
+              else if(this.resp[0].resposta == 'false_i'){
+                alert('Utilizador já existente');
+                this.router.navigate(['/empresas']);
+              }
+              else{
+                alert('Erro ao editar empresa');
+              }
             }
           });
         }

@@ -24,7 +24,6 @@ export class AlertasComponent implements OnInit {
     .subscribe(resposta => {
       this.resposta = resposta;
       //console.log("teste----->", this.resposta);
-      //console.log("teste----->", this.resposta);
 
       if(this.resposta == null){
         document.getElementById('sem_alertas').style.display = 'inline';
@@ -38,12 +37,14 @@ export class AlertasComponent implements OnInit {
         .subscribe(resp => {
           this.resp = resp;
           //console.log("Notificacoes ----->", this.resp);
-          if(this.resp[0].resposta == 'true'){
-            alert('Com sucesso');
-            this.router.navigate(['/empresas']);
-          }
-          else{
-            alert('Erro ao adicionar problemas vistos');
+          if(this.resposta != null){
+            if(this.resp[0].resposta == 'true'){
+              alert('Com sucesso');
+              this.router.navigate(['/empresas']);
+            }
+            else{
+              alert('Erro ao adicionar problemas vistos');
+            }
           }
         });
     }

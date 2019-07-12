@@ -59,12 +59,14 @@ export class EmpresasComponent implements OnInit {
         .subscribe(resp => {
           this.resp = resp;
           //console.log("Eliminar empresa ----->", this.resp);
-          if(this.resp[0].resposta == 'true'){
-            alert('Empresa eliminada com sucesso');
-            window.location.reload();
-          }
-          else{
-            alert('Erro ao eliminar empresa');
+          if(this.resposta != null){
+            if(this.resp[0].resposta == 'true'){
+              alert('Empresa eliminada com sucesso');
+              window.location.reload();
+            }
+            else{
+              alert('Erro ao eliminar empresa');
+            }
           }
         });
     }

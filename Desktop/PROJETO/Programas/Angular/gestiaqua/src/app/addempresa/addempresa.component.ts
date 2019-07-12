@@ -52,16 +52,18 @@ export class AddempresaComponent implements OnInit {
           .subscribe(resposta => {
             this.resposta = resposta;
             //console.log("Add empresa ----->", this.resposta);
-            if(this.resposta[0].resposta == 'true'){
-              alert('Empresa adicionada com sucesso');
-              this.router.navigate(['/empresas']);
-            }
-            else if(this.resposta[0].resposta == 'false_i'){
-              alert('Utilizador já existente');
-              this.router.navigate(['/empresas']);
-            }
-            else{
-              alert('Erro ao adicionar empresa');
+            if(this.resposta != null){
+              if(this.resposta[0].resposta == 'true'){
+                alert('Empresa adicionada com sucesso');
+                this.router.navigate(['/empresas']);
+              }
+              else if(this.resposta[0].resposta == 'false_i'){
+                alert('Utilizador já existente');
+                this.router.navigate(['/empresas']);
+              }
+              else{
+                alert('Erro ao adicionar empresa');
+              }
             }
           });
       }

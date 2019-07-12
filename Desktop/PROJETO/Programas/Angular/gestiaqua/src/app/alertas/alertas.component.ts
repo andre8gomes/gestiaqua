@@ -24,6 +24,7 @@ export class AlertasComponent implements OnInit {
     .subscribe(resposta => {
       this.resposta = resposta;
       //console.log("teste----->", this.resposta);
+      //console.log("teste----->", this.resposta);
 
       if(this.resposta == null){
         document.getElementById('sem_alertas').style.display = 'inline';

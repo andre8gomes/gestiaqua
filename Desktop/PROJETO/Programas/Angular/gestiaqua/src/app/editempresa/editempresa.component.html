@@ -1,0 +1,45 @@
+<app-geral></app-geral>
+
+<!--- FORMULARIO EDIT EMPRESA --->
+<SECTION class="sec_form">
+  <form class="forms">
+    <div class="btn_form2">
+      <button class="btns btn_cancelar" type="reset" (click)="btnClickCancelar()">Cancelar</button>
+      <button class="btns btn_guardar" type="submit" (click)="btnClickGuardar()">Guardar</button>
+    </div>
+    <div class="div_edit">
+      <div class="div_form">
+        <div class="div_empresa">
+          <p class="p_form">Nome da empresa</p>
+          <input class="input_form" [formControl] = "nome_empresa" type="text" placeholder="Digite o nome da empresa"><br>
+          <p id="nomee_edit_empresa" class="p_validacao">Nome da empresa é obrigatório</p>
+          <p class="p_form espaco_add">Telefone</p>
+          <input class="input_form" [formControl] = "telefone_empresa" type="tel" placeholder="Digite o telefone da empresa"><br>
+          <p id="telefone_edit_empresa" class="p_validacao">Telefone é obrigatório</p>
+          <p id="telefonem_edit_empresa" class="p_validacao">Telefone tem de ter 9 números</p>
+          <p class="p_form espaco_add">Email</p>
+          <input class="input_form" [formControl] = "email_empresa" type="email" placeholder="Digite o email da empresa"><br>
+          <p id="emaile_edit_empresa" class="p_validacao">Email é obrigatório</p>
+          <p id="emailev_edit_empresa" class="p_validacao">Email inválido</p>
+          <p class="p_form espaco_add">Localização</p>
+          <input class="input_form" [formControl] = "localizacao" type="text" placeholder="Digite as coordenadas de localização da empresa (lon, lat)"><br>
+          <p id="localizacao_edit_empresa" class="p_validacao">Localização é obrigatória</p>
+        </div>
+        <div class="div_admin">
+          <p class="p_form">Nome do administrador</p>
+          <input class="input_form" [formControl] = "nome_admin" type="text" placeholder="Digite o nome do administrador"><br>
+          <p id="nomeu_edit_empresa" class="p_validacao">Nome do administrador é obrigatório</p>
+          <p class="p_form espaco_add">Telemóvel do administrador</p>
+          <input class="input_form" [formControl] = "telemovel_admin" type="tel" placeholder="Digite o telemóvel do administrador"><br>
+          <p id="telemovelu_edit_empresa" class="p_validacao">Telemóvel é obrigatório</p>
+          <p id="telemovelum_edit_empresa" class="p_validacao">Telemóvel tem de ter 9 números</p>
+          <p class="p_form espaco_add">Email do administrador</p>
+          <input class="input_form" [formControl] = "email_admin" type="email" placeholder="Digite o email do administrador"><br>
+          <p id="emailu_edit_empresa" class="p_validacao">Email é obrigatório</p>
+          <p id="emailuv_edit_empresa" class="p_validacao">Email inválido</p>
+        </div>
+      </div>
+    </div>
+  </form>
+</SECTION>
+<!--- /FORMULARIO EDIT EMPRESA --->

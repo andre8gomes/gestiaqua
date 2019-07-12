@@ -1,0 +1,57 @@
+#img_bola{
+	display: none;
+}
+
+#n_problema{
+	display: none;
+}
+
+
+.heading{
+	background-color: rgb(255,255,255);
+	height: 75px;
+}
+
+.logo{
+	display: inline-block;
+}
+
+.logotipo{
+	width: auto;
+	height: 70px;
+	padding: 6% 0% 0% 20%;
+}
+
+
+
+.img_cabecalho{
+	width: auto;
+	height: 22px;
+	position: absolute;
+	fill: rgb(43,43,43);
+}
+
+.img_notificacao{
+	right: 55px;
+	top: 6%;
+}
+
+.n_problemas{
+	top: 5.5%;
+}
+
+.img_sair{
+	right: 20px;
+	top: 6%;
+}
+
+.bolinha{
+	width: 15px;
+	height: auto;
+	top:5%;
+	z-index: 1;
+	font-size: 9px;
+	color: rgb(255,255,255);
+	font-weight: bold;
+	text-align: center;
+}

@@ -1,0 +1,37 @@
+<app-geral></app-geral>
+
+<div class="btn_form2">
+    <button class="btns btn_cancelar_notificacoes" type="reset" (click)="btnClickCancelar()">Cancelar</button>
+    <button class="btns btn_guardar_notificacoes" type="reset" (click)="btnClickGuardar()">Guardar</button>
+</div>
+
+<!--- TABELA EMPRESAS --->
+<SECTION>
+	<div id="sem_alertas" class="div_vazio_alertas">
+		<p>Não existem alertas</p>
+    </div>
+    
+	<table class="tabelas_gerir" *ngIf="resposta != null">
+        
+        <!-- Cabeçalho -->
+		<tr class="linha_cabecalho">
+			<th class="linha_valores linha_espaco">Alertas</th>
+			<th class="linha_valores linha_espaco">Empresa</th>
+            <th class="linha_valores linha_espaco">Data</th>
+            <th class="linha_valores linha_espaco"></th>
+		</tr>
+		<!-- /Cabeçalho -->
+
+		<!-- Linhas da tabela -->
+		<tr *ngFor="let alerta of resposta">
+			<td class="linha_tabelas" [ngStyle]="{'background-color': changecolor(alerta.estado), 'color': changecolor_letter(alerta.estado)}">{{alerta.problema}}</td>
+			<td class="linha_tabelas" [ngStyle]="{'background-color': changecolor(alerta.estado), 'color': changecolor_letter(alerta.estado)}">{{alerta.empresa}}</td>
+            <td class="linha_tabelas" [ngStyle]="{'background-color': changecolor(alerta.estado), 'color': changecolor_letter(alerta.estado)}">{{alerta.data_problema}}</td>
+            <td *ngIf="alerta.estado == 1" class="linha_tabelas" [ngStyle]="{'background-color': changecolor(alerta.estado), 'color': changecolor_letter(alerta.estado)}">
+				<input class="in_check" type="checkbox" (change)="verificarCheckBox(alerta.id_problema)" name="Realizar">
+			</td>
+		</tr>
+		<!-- /Linhas da tabela -->
+	</table>
+</SECTION>
+<!--- TABELA EMPRESAS --->

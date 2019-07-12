@@ -1,0 +1,92 @@
+.sec_login{
+	position: relative;
+}
+
+.cabecalho_login{
+	background-color:rgb(0,33,222);
+	height: 180px;
+	width: 100%;
+	position:fixed;
+}
+
+.logo_login{
+	width: auto;
+	height: 100px;
+    top: 55px;
+}
+
+.centrar{
+	margin: 0;
+    position: absolute;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+.bem_vindo{
+	font-family: 'Muli_black', sans-serif;
+	font-size: 50px;
+	color: rgb(255,255,255);
+    top: 75%;
+}
+
+.form_login{
+	margin: 0;
+	left: 50%;
+    margin-right: -50%;
+	transform: translate(-50%,80%);
+	position:fixed;
+}
+
+.p_titulo{
+	font-size: 28px;
+	color: rgb(43,43,43);
+	text-align: center;
+	padding-bottom: 3%;
+}
+
+.p_form{
+	font-size: 16px;
+	font-family: 'Muli', sans-serif;
+	color: rgb(43,43,43);
+	padding: 2% 0% 1.5% 0%;
+}
+
+.input_form{
+	width: 380px;
+	height: 35px;
+	border: 1px solid rgb(201,201,201);
+	border-radius: 4px;
+	padding-left: 10px;
+}
+
+::-webkit-input-placeholder {
+   color: rgb(201,201,201);
+   font-family: 'Muli', sans-serif;
+   padding-left: 2%;
+   
+}
+
+.espaco{
+	padding-top: 10%;
+}
+
+.btn_form{
+	padding: 10% 0% 0% 0%;
+}
+
+.btn_login{
+	font-size: 15px;
+	font-family: 'Muli', sans-serif;
+	color: rgb(255,255,255);
+	background-color:rgb(0,33,222);
+	border:none;
+	border-radius: 4px;
+	width: 371px;
+	height: 35px;
+}
+
+.recuperar_pass{
+	font-size: 12px;
+	padding: 3% 0% 0% 0%;
+}

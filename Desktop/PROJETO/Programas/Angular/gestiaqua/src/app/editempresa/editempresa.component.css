@@ -1,0 +1,59 @@
+/*---------- VALIDAÇÕES ----------*/
+#nomee_edit_empresa{
+    display: none;
+}
+
+#telefone_edit_empresa{
+    display: none;
+}
+
+#telefonem_edit_empresa{
+    display: none;
+}
+
+#emaile_edit_empresa{
+    display: none;
+}
+
+#emailev_edit_empresa{
+    display: none;
+}
+
+#localizacao_edit_empresa{
+    display: none;
+}
+
+#nomeu_edit_empresa{
+    display: none;
+}
+
+#telemovelu_edit_empresa{
+    display: none;
+}
+
+#telemovelum_edit_empresa{
+    display: none;
+}
+
+#emailu_edit_empresa{
+    display: none;
+}
+
+#emailuv_edit_empresa{
+    display: none;
+}
+/*---------- /VALIDAÇÕES ----------*/
+
+
+.div_edit{
+	background-color: rgb(255,255,255);
+	width: 1100px;
+	height: 450px;
+	border-radius: 5px;
+
+	margin: 4% 0% 0% 0%;
+    position: absolute;
+	left: 50%;
+    margin-right: -50%;
+	transform: translate(-50%, 2%);
+}

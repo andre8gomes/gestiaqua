@@ -1,0 +1,208 @@
+/*---------- GERAL ----------*/
+
+body{
+	background-color: rgb(240,240,240);
+	margin: 0;
+	font-family: 'Muli', sans-serif;
+	color:rgb(138,138,138)
+}
+
+p, h1{
+	font-family: 'Muli', sans-serif;
+	color: rgb(138,138,138);
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(138,138,138)
+}
+
+a, button{
+	cursor: pointer;
+}
+
+/*---------- /GERAL ----------*/
+
+
+/*---------- FORMULÁRIOS ----------*/
+.sec_form{
+	position: absolute;
+	left: 4%;
+}
+
+.forms{
+	position: relative;
+	background-color: rgb(240,240,240);
+	width: 1250px;
+	height: 500px;
+	border-radius: 5px;
+}
+
+.btn_form2{
+	position: relative;
+}
+
+.btns{
+	width: 140px;
+	height: 35px;
+	float: right;
+	border-radius: 5px;
+	border: none;
+	font-size: 13px;
+	font-family: 'Muli', sans-serif;
+	text-align: center;
+}
+
+.btn_cancelar{
+	background-color:rgb(255,255,255);
+	color: rgb(43,43,43);
+	margin: 1% 6% 1% 0%;
+}
+
+.btn_guardar{
+	background-color: rgb(0,33,222);
+	color: rgb(255,255,255);
+	margin: 1% 1% 1% 0%;
+}
+
+.div1{
+	background-color: rgb(255,255,255);
+	width: 1100px;
+	height: 650px;
+	border-radius: 5px;
+
+	margin: 4% 0% 0% 0%;
+    position: absolute;
+	left: 50%;
+    margin-right: -50%;
+	transform: translate(-50%, 2%);
+}
+
+.div_form{
+	position: relative;
+	background-color: rgb(255,255,255);
+}
+.p_form{
+	font-size: 16px;
+	font-family: 'Muli', sans-serif;
+	color: rgb(43,43,43);
+	padding: 2% 0% 1.5% 0%;
+}
+
+.espaco_add{
+	padding-top: 5%;
+} 
+
+.input_form{
+	width: 380px;
+	height: 35px;
+	border: 1px solid rgb(201,201,201);
+	border-radius: 4px;
+	padding-left: 10px;	
+}
+
+
+
+.p_validacao{
+	font-size: 10px;
+	color: rgb(255, 0, 0);
+	margin: 0;
+}
+
+.div_empresa{
+    float: left;
+    padding: 2% 0% 0% 8%;
+}
+
+.div_admin{
+    float: right;
+    padding: 2% 8% 0% 0%;
+}
+
+/*---------- /FORMULÁRIOS ----------*/
+
+/*-----------------------------------------------------------------------------*/
+
+/*---------- PESQUISAR ----------*/
+.div_pesquisa{
+	background-color: white;
+	border:solid 1px rgb(201,201,201);
+	border-radius:15px;
+	height:30px;
+	width: 300px;
+	margin: 2% 0% 0% 6%;
+	
+}
+ 
+.in_pesquisa{
+	font-family: 'Muli', sans-serif;
+	font-size:17px;
+	color: rgb(43,43,43);
+	height:30px;
+	width:240px;
+	border:none;
+	background-color:transparent;
+	float:left;
+	padding-left: 10px;
+	outline: none;
+}
+
+.btn_gerir{
+    background-color: transparent;
+    border:none;
+}
+
+.img_btn_pesquisa{
+	width: 20px;
+	padding-top: 22%;
+}
+
+/*---------- /PESQUISAR ----------*/
+
+
+/*---------- TABELA EMPRESAS ----------*/
+
+.tabelas_gerir, .linha_tabelas, .linha_valores, .linha_valores_tarefas{
+	border: 1px solid rgb(240,240,240);
+	border-collapse: collapse;
+}
+
+.tabelas_gerir{
+	width: 92%;
+	background-color: white;
+	border-left: none;
+	border-right: none;
+	margin: 10% 0% 2% 4%;
+	font-family: 'Muli', sans-serif;
+	font-size: 15px;
+}
+
+.linha_tabelas{
+	text-align: center;
+	padding: 8px 0px 8px 0px;
+}
+
+.linha_cabecalho{
+	background-color: rgb(240,240,240);
+} 
+
+.img_gerir{
+	width: 22px;
+	fill: rgb(43,43,43);
+}
+
+.linha_valores{
+    width: 10px;
+    text-align: center;
+    padding: 0.7% 0% 0.7% 0%;
+}
+
+.linha_espaco{
+	padding: 2% 1% 1.5% 1%;
+}
+
+.separar{
+    border-right: 1px solid rgb(43,43,43);
+}
+/*---------- /TABELA EMPRESAS ----------*/

@@ -1,0 +1,25 @@
+#sem_alertas{
+	display: none;
+}
+
+
+.btn_cancelar_notificacoes{
+	background-color:rgb(255,255,255);
+	color: rgb(43,43,43);
+	margin: 2% 2% 2% 0%;
+}
+
+.btn_guardar_notificacoes{
+	background-color: rgb(0,33,222);
+	color: rgb(255,255,255);
+	margin: 2% 1% 1% 0%;
+}
+
+.div_vazio_alertas{
+	padding: 15% 0% 0% 30%;
+	font-size: 50px;
+}
+
+.in_check{
+	transform: scale(1.5);
+}

@@ -1,0 +1,26 @@
+<!--- CABEÇALHO LOGIN --->
+<SECTION class="sec_login">
+    <div>
+        <div class="cabecalho_login">
+            <img class="logo_login centrar" src="./assets/Imagens/logo_branco.svg" alt="Logotipo"><br>
+            <p class="bem_vindo centrar">Bem vindo</p>
+        </div>
+    </div>
+</SECTION>
+<!--- /CABEÇALHO LOGIN --->
+
+<!--- FORMULARIO LOGIN --->
+<SECTION class="sec_login">
+    <form class="form_login">
+        <p class="p_titulo"><b>Iniciar sessão</b></p>
+        <p class="p_form">Nome de utilizador</p>
+        <input class="input_form" [formControl] = "utilizador" type="text" name="nome_utilizador" placeholder="Introduza aqui o nome de utilizador"><br>
+        <p class="p_form espaco">Palavra-passe</p>
+        <input class="input_form" [formControl] = "palavra_passe" type="password" name="palavra_passe" placeholder="Introduza aqui a palavra-passe"><br>
+        <div class="btn_form">
+            <button class="btn_login" type="submit" (click)="btnClick_login()">Iniciar sessão</button>
+        </div>
+        <p class="recuperar_pass">Esqueceu-se da palavra-passe? <a (click)="btnClick_recuperar"><b> Recuperar a palavra-passe</b></a></p>
+    </form>
+</SECTION>
+<!--- /FORMULARIO LOGIN --->

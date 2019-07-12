@@ -1,0 +1,56 @@
+<app-geral></app-geral>
+
+<!--- FORMULARIO ADD EMPRESA --->
+<SECTION class="sec_form">
+  <form class="forms">
+    <div class="btn_form2">
+      <button class="btns btn_cancelar" type="reset" (click)="btnClickCancelar()">Cancelar</button>
+      <button class="btns btn_guardar" type="submit" (click)="btnClickGuardar()">Guardar</button>
+    </div>
+    <div class="div1">
+      <div class="div_form">
+        <div class="div_empresa">
+          <p class="p_form">Nome da empresa</p>
+          <input class="input_form" [formControl] = "nome_empresa" type="text" placeholder="Digite o nome da empresa"><br>
+          <p id="nomee_add_empresa" class="p_validacao">Nome da empresa é obrigatório</p>
+          <p class="p_form espaco_add">Telefone</p>
+          <input class="input_form" [formControl] = "telefone_empresa" type="tel" placeholder="Digite o telefone da empresa"><br>
+          <p id="telefone_add_empresa" class="p_validacao">Telefone é obrigatório</p>
+          <p id="telefonem_add_empresa" class="p_validacao">Telefone tem de ter 9 números</p>
+          <p class="p_form espaco_add">Email</p>
+          <input class="input_form" [formControl] = "email_empresa" type="email" placeholder="Digite o email da empresa"><br>
+          <p id="emaile_add_empresa" class="p_validacao">Email é obrigatório</p>
+          <p id="emailev_add_empresa" class="p_validacao">Email inválido</p>
+          <p class="p_form espaco_add">Localização</p>
+          <input class="input_form" [formControl] = "localizacao" type="text" placeholder="Digite as coordenadas de localização da empresa (lon, lat)"><br>
+          <p id="localizacao_add_empresa" class="p_validacao">Localização é obrigatória</p>
+        </div>
+        <div class="div_admin">
+          <p class="p_form">Nome do administrador</p>
+          <input class="input_form" [formControl] = "nome_admin" type="text" placeholder="Digite o nome do administrador"><br>
+          <p id="nomeu_add_empresa" class="p_validacao">Nome do administrador é obrigatório</p>
+          <p class="p_form">Utilizador do administrador</p>
+          <input class="input_form" [formControl] = "utilizador_admin" type="text" placeholder="Digite o utilizador"><br>
+          <p id="utilizador_add_empresa" class="p_validacao">Utilizador é obrigatório</p>
+          <p class="p_form espaco_add">Telemóvel do administrador</p>
+          <input class="input_form" [formControl] = "telemovel_admin" type="tel" placeholder="Digite o telemóvel do administrador"><br>
+          <p id="telemovelu_add_empresa" class="p_validacao">Telemóvel é obrigatório</p>
+          <p id="telemovelum_add_empresa" class="p_validacao">Telemóvel tem de ter 9 números</p>
+          <p class="p_form espaco_add">Email do administrador</p>
+          <input class="input_form" [formControl] = "email_admin" type="email" placeholder="Digite o email do administrador"><br>
+          <p id="emailu_add_empresa" class="p_validacao">Email é obrigatório</p>
+          <p id="emailuv_add_empresa" class="p_validacao">Email inválido</p>
+          <p class="p_form espaco_add">Palavra-passe</p>
+          <input class="input_form" [formControl] = "palavra_passe" type="password" placeholder="Digite a palavra-passe"><br>
+          <p id="pass_add_empresa" class="p_validacao">Palavra-passe é obrigatória</p>
+          <p id="pass_min_add_empresa" class="p_validacao">Palavra-passe tem de ter no minimo 6 caracteres</p>
+          <p class="p_form espaco_add">Confirme a palavra-passe</p>
+          <input class="input_form" [formControl] = "confirmapasse" type="password" placeholder="Digite novamente a palavra-passe"><br>
+          <p id="cpass_add_empresa" class="p_validacao">Confirmar palavra-passe é obrigatória</p>
+          <p id="passd_add_empresa" class="p_validacao">As palavras-passe não coincidem</p>
+        </div>
+      </div>
+    </div>
+  </form>
+</SECTION>
+<!--- /FORMULARIO ADD EMPRESA --->

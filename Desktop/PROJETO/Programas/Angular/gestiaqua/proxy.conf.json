@@ -1,7 +1,8 @@
-{  
-    "/api/*": {  
-       "target": "http://194.65.138.64:5005",  
-       "secure": false,  
-       "logLevel": "debug"  
-    }  
- } 
+{
+    "/api/*": {
+      "target": "http://194.65.138.64:5005",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+    }
+  }
